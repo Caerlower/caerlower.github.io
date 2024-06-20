@@ -50,9 +50,6 @@
         .text-lg {
             font-size: 1.125rem;
         }
-        .list-disc {
-            list-style-type: disc;
-        }
         .list-inside {
             list-style-position: inside;
         }
@@ -102,21 +99,19 @@
             text-decoration: underline;
         }
         .link-item {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            display:inline;
         }
         .link-item::before {
             content: '–';
-            display: Inline-bottom;
+            display: inline;
             margin-right: 0.5rem;
         }
         .link-item span {
             margin-bottom: 0.25rem; /* margin for the span */
         }
-        .mt-2 {
-            margin-top: 0rem;
-            
+        .redirect{
+            display:block;
+            padding-left:20px;
         }
     </style>
 </head>
@@ -145,7 +140,7 @@
             Stay tuned to see what I bring to life!
         <div class="mt-6">
             <h2 class="text-lg">What I currently know <i class="fas fa-heart"></i></h2>
-            <ul class="list-disc list-inside">
+            <ul class="list-inside">
                 <li class="mt-2"><strong>Development:</strong> Python, C, Java, Rust(a little bit), html/css</li>
                 <li class="mt-2"><strong>(Life):</strong> Family & Friends, Japanese learning, Coding</li>
               <li class="mt-2"><strong>Hobby:</strong> Reading Books, Anime & manga</li>
@@ -153,13 +148,13 @@
         </div>
         <div class="mt-6 link-section">
             <h2 class="text-lg">Say hello!</h2>
-            <ul class="list-disc list-inside">
-                <li class="link-item"><span>Twitter</span><a href="https://twitter.com/caerlower">twitter.com/caerlower</a></li>
-                <li class="link-item"><span>Github</span><a href="https://github.com/caerlower">github.com/caerlower</a></li>
-                <li class="link-item"><span>LinkedIn</span><a href="https://linkedin.com/in/caerlower">linkedin.com/in/caerlower</a></li>
-                <li class="link-item"><span>Farcaster</span><a href="https://warpcast.com/caerlower">https://warpcast.com/caerlower</a></li>
-              <li class="link-item"><span>Instagram</span><a href="https://www.instagram.com/caerlower">https://www.instagram.com/caerlower</a></li>
-                <li class="link-item"><span>E-Mail</span><a href="mailto:goyal.manav@hotmail.com">goyal.manav@hotmail.com</a></li>
+            <ul class="list-inside">
+                <li class="link-item"><span>Twitter</span><a class="redirect" href="https://twitter.com/caerlower">twitter.com/caerlower</a></li>
+                <li class="link-item"><span>Github</span><a class="redirect" href="https://github.com/caerlower">github.com/caerlower</a></li>
+                <li class="link-item"><span>LinkedIn</span><a class="redirect" href="https://linkedin.com/in/caerlower">linkedin.com/in/caerlower</a></li>
+                <li class="link-item"><span>Farcaster</span><a class="redirect" href="https://warpcast.com/caerlower">https://warpcast.com/caerlower</a></li>
+              <li class="link-item"><span>Instagram</span><a class="redirect" href="https://www.instagram.com/caerlower">https://www.instagram.com/caerlower</a></li>
+                <li class="link-item"><span>E-Mail</span><a class="redirect" href="mailto:goyal.manav@hotmail.com">goyal.manav@hotmail.com</a></li>
             </ul>
         </div>
     </div>
