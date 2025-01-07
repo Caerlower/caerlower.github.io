@@ -3,181 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="caerlower.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>caerlower</title>
     <style>
         body {
-            background-color: #f0fdf4; /* light green background */
-            color: #065f46; /* dark green text */
-            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 1.75;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
-        .container {
-            max-width: 56rem; /* max-w-4xl */
-            margin: 0 auto;
-            padding: 1.5rem; /* p-6 */
-            background-color: #ffffff; /* white background for content */
-            border-radius: 0.5rem; /* rounded */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* slight shadow */
+
+        h1 {
+            font-size: 2.5em;
         }
-        .flex {
-            display: flex;
-            align-items: center;
-        }
-        .profile-pic {
-            border-radius: 9999px; /* rounded-full */
-            width: 6rem; /* w-24 */
-            height: 6rem; /* h-24 */
-            margin-right: 1.5rem; /* mr-6 */
-        }
-        .text-xl {
-            font-size: 1.25rem;
-        }
-        .text-green-700 {
-            color: #065f46;
-        }
-        .mt-4 {
-            margin-top: 1rem;
-        }
-        .mt-6 {
-            margin-top: 1.5rem;
-        }
-        .text-lg {
-            font-size: 1.125rem;
-        }
-        .list-inside {
-            list-style-position: inside;
-        }
-        .underline {
-            text-decoration: underline;
-        }
-        .italic {
-            font-style: italic;
-        }
-        .fixed {
-            position: fixed;
-        }
-        .top-0 {
-            top: 0;
-        }
-        .right-0 {
-            right: 0;
-        }
-        .block {
-            display: block;
-        }
-        .text-green-500 {
-            color: #10b981;
-        }
-        .text-blue-500 {
-            color: #3b82f6;
-        }
-        .text-yellow-500 {
-            color: #f59e0b;
-        }
-        .bg-green-50 {
-            background-color: #f0fdf4; /* light green background */
-        }
-        /* New CSS for link section */
-        .link-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .link-section li {
-            margin-top: 1rem;
-        }
-        .link-section a {
-            color: #10b981; /* light green */
+
+        a {
+            color: rgb(255, 115, 0);
             text-decoration: none;
         }
-        .link-section a:hover {
+
+        a:hover {
             text-decoration: underline;
         }
-        .link-item {
-            display:inline;
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .link-item::before {
-            content: '–';
-            display: inline;
-            margin-right: 0.5rem;
-        }
-        .link-item span {
-            margin-bottom: 0.25rem; /* margin for the span */
-        }
-        .redirect{
-            display:block;
-            padding-left:20px;
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="flex">
-            <div>
-                <image src = "banner.png" alt="Cosmos image" width="900" height="230">
-                <h1 class="text-xl">Hello, I'm Manav</h1>
-                <p>from India</p>
-            </div>
-        </div>
-        <p class="mt-4">
-            Welcome aboard!
-        </p>
-       <p class="mt-4">
-           I'm an undergraduate student in Computer Science, constantly diving deeper into the world of code.
-        </p>
-        <p class="mt-4">Whether I'm cracking open a book or wrestling with a programming challenge, I'm always up for learning something new. (Right now, I'm tackling the fascinating language called Japanese🇯🇵 – gotta keep my brain sharp!)</p>
-        <p class="mt-4">
-            As an aspiring entrepreneur, I am dedicated to innovating for a sustainable and creative future.
-        </p>
-       <p class="mt-4">
-            I'm a huge Web3 and AI enthusiast, excited about the potential of these technologies. That's why I'm currently honing my development skills to create some awesome projects in the future.
-        </p>
-      <p class="mt-4">
-            Stay tuned to see what I bring to life!
-        <div class="mt-6">
-            <h2 class="text-lg">My skills and hobbies:</h2>
-            <ul class="list-inside">
-                <li class="mt-2"><strong>Development:</strong> Python, C, Java, Rust(a little bit), html/css</li>
-                <li class="mt-2"><strong>(Life):</strong> Family & Friends, Japanese learning, Coding</li>
-              <li class="mt-2"><strong>Hobbies:</strong> Reading Books, Anime & manga</li>
-            </ul>
-        </div>
+    <div class="content">
+        <nav>
+            <a href="#" style="margin-right:15px;">home</a>
+            <a href="https://medium.com/@caerlower" style="margin-right:15px;">blog</a>
+        </nav>
 
-        <div class="mt-6">
-                    <h2 class="text-lg">What I am currently doing:</h2>
-                    <ul class="list-inside">
-                      <li class="mt-2">I am doing cs50 course.</li>
-                        <li class="mt-2">Working on my X(Formerly Twitter) account.</li>
-                   </ul>
-                </div>
-       <div class="mt-6">
-            <h2 class="text-lg">Experience</h2>
-         <div class="mt-4">
-           <li><a class="underline">Algobharat</a> – Algorand Blockchain Club Lead</li>
-           <p class = "mt-4"> Mar, 2024 - Present </p>
-            <p>→ I empower ABC club members by sharing info on Algorand, Web3, and development, and foster collaboration through troubleshooting sessions and knowledge sharing. I also help build a welcoming environment to attract and engage new members.
-</p>
-            <li><a class="underline">Maangler</a> – Marketing Intern</li>
-           <p class = "mt-4"> Jan, 2024 - Feb, 2024 </p>
-            <p>→ I grew Maangler community with targeted promotions to college students on social media and other outreach.</p>
-        </div>
-         
-      </div>
-        <div class="mt-6 link-section">
-            <h2 class="text-lg">Say hello!</h2>
-            <ul class="list-inside">
-                <li class="link-item"><span>Twitter</span><a class="redirect" href="https://twitter.com/caerlower">twitter.com/caerlower</a></li>
-                <li class="link-item"><span>Github</span><a class="redirect" href="https://github.com/caerlower">github.com/caerlower</a></li>
-                <li class="link-item"><span>LinkedIn</span><a class="redirect" href="https://linkedin.com/in/caerlower">linkedin.com/in/caerlower</a></li>
-                <li class="link-item"><span>Farcaster</span><a class="redirect" href="https://warpcast.com/caerlower">warpcast.com/caerlower</a></li>
-              <li class="link-item"><span>Instagram</span><a class="redirect" href="https://www.instagram.com/caerlower">instagram.com/caerlower</a></li>
-                <li class="link-item"><span>E-Mail</span><a class="redirect" href="mailto:goyal.manav@hotmail.com">goyal.manav@hotmail.com</a></li>
-            </ul>
+        <h1>hey there</h1>
+        <p>
+            i am manav, i'm an undergraduate student in computer science.
+         </p>
+         <p>whether i'm cracking open a book or wrestling with a programming challenge, i'm always up for learning something new.</p>
+         <p>
+             as an aspiring entrepreneur, i am dedicated to innovating for a sustainable and creative future.
+         </p>
+        <p>
+            i'm a huge web3 and ai enthusiast, excited about the potential of these technologies. that's why i'm currently honing my development skills to create some awesome projects in the future.
+         </p>
+       <p>
+             stay tuned to see what i bring to life!
+       </p>
+
+    <div>
+        <h3>my skills and hobbies:</h3>
+        <ul>
+            <li><strong>programming langauges:</strong> python, java, javascript, sql</li>
+            <li><strong>soft skills:</strong> communication</li>
+          <li><strong>hobbies:</strong> reading books, anime & manga</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>links</h2>
+        <ul>
+            <li><a href="https://github.com/caerlower">github</a></li>
+            <li><a href="https://www.linkedin.com/in/caerlower/">linkedin</a></li>
+        </ul>
+    </div>
+
+        <div class="footer">
+            © copyright caerlower 2025
         </div>
     </div>
 </body>
